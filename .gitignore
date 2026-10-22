@@ -1,0 +1,12 @@
+
+# Flutter Additions
+build/
+.dart_tool/
+.packages
+.flutter-plugins
+.flutter-plugins-dependencies
+.idea/
+*.iml
+.metadata
+PRDUTS
+assets/images/Profile.jpg
