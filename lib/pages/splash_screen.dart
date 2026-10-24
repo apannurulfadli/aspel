@@ -14,7 +14,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(const Duration(seconds: 2), () {
+    Future.delayed(const Duration(seconds: 4), () {
       if (mounted) {
         Navigator.pushReplacement(
           context,
@@ -32,7 +32,11 @@ class _SplashScreenState extends State<SplashScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Icon(Icons.apartment, size: 80, color: Colors.white),
+            Image.asset(
+              'assets/images/Politeknik-Manufaktur-Negeri-Bangka-Belitung-Logo.png',
+              width: 100,
+              height: 100,
+            ),
             const SizedBox(height: 16),
             Text(
               'Aspel',

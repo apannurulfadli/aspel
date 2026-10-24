@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '../widgets/facility_item.dart';
 import 'fasilitas_detail_page.dart';
 
-// Data fasilitas terpusat di satu tempat (hardcoded sesuai PRD)
+
 final List<Map<String, dynamic>> _fasilitasData = [
   {
     'title': 'Kamar Standar',
