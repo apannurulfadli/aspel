@@ -1,14 +1,20 @@
 import 'package:flutter/material.dart';
 import '../core/app_colors.dart';
+import '../widgets/app_drawer.dart';
 import '../widgets/custom_card.dart';
 
 class BerandaPage extends StatelessWidget {
-  const BerandaPage({super.key});
+  final ValueChanged<int>? onNavigateToTab;
+
+  const BerandaPage({super.key, this.onNavigateToTab});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Beranda Aspel')),
+      appBar: AppBar(
+        title: const Text('Beranda Aspel'),
+      ),
+      drawer: AppDrawer(onSelectTab: onNavigateToTab),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(16.0),

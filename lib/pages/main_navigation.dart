@@ -14,17 +14,23 @@ class MainNavigation extends StatefulWidget {
 class _MainNavigationState extends State<MainNavigation> {
   int _currentIndex = 0;
 
-  final List<Widget> _pages = [
-    const BerandaPage(),
-    const FasilitasPage(),
-    const LaporanPage(),
-    const ProfilPage(),
-  ];
+  void _onTabSelected(int index) {
+    setState(() {
+      _currentIndex = index;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
+    final List<Widget> pages = [
+      BerandaPage(onNavigateToTab: _onTabSelected),
+      const FasilitasPage(),
+      const LaporanPage(),
+      const ProfilPage(),
+    ];
+
     return Scaffold(
-      body: _pages[_currentIndex],
+      body: pages[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,
         onTap: (index) {

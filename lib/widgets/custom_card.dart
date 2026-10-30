@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../core/app_colors.dart';
 
 class CustomCard extends StatelessWidget {
   final String title;
@@ -9,7 +10,7 @@ class CustomCard extends StatelessWidget {
     super.key,
     required this.title,
     required this.content,
-    this.headerColor = const Color(0xFF334d80),
+    this.headerColor = AppColors.polmanBlueDark,
   });
 
   @override

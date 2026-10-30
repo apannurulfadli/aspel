@@ -3,7 +3,9 @@ import 'package:google_fonts/google_fonts.dart';
 import 'core/app_colors.dart';
 import 'pages/splash_screen.dart';
 
-void main() {
+// Inisialisasi DB ditangani sepenuhnya oleh LaporanDb (laporan_db.dart)
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const AspelApp());
 }
 

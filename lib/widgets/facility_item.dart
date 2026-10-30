@@ -41,7 +41,7 @@ class FacilityItem extends StatelessWidget {
             Container(
               width: double.infinity,
               padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0),
-              color: const Color(0xFF334d80),
+              color: AppColors.polmanBlueDark,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
